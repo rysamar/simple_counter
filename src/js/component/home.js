@@ -1,23 +1,19 @@
 import React from "react";
+import { MyNumber } from "./number.jsx";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 export function Home() {
+	let one = 1000;
+	let ten = 10000;
+	let hundred = 100000;
+	let thousand = 1000000;
 	return (
 		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
+			<p>Simple Counter</p>
 			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
+				<i className="far fa-clock" />{" "}
+				<MyNumber lotOfCeros={thousand} />{" "}
+				<MyNumber lotOfCeros={hundred} /> <MyNumber lotOfCeros={ten} />{" "}
+				<MyNumber lotOfCeros={one} />
 			</p>
 		</div>
 	);

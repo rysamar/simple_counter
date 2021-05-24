@@ -1,13 +1,10 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
 
-    You can write your own styles here...
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(6, 180, 233);
+    color: rgb(138, 137, 137);
+    font-size: 80px;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
